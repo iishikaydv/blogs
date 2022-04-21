@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+/*.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}*/
+
+/* Fake image */
+.fakeimg {
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row>.leftcolumn>.card>h2{
+  text-align: center;
+}
+
+.row>.leftcolumn>.card>p{
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.row>.leftcolumn>.card>.fakeimg>img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:30%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Finance blogs</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Fundamental Analysis</h2>
+      <div class="fakeimg" style="height:200px;">
+        <img src="/images/FundamentalAnalysis.jpg">
+      </div>
+      <p>Fundamental Analysis is the study of a business, its financial statements, its peers, its strengths and weaknesses, and the industry and economy the business operates in. This study enables an investor to arrive at an intrinsic value (or fair value) of that company and to form an opinion about the future growth of the company. But what is intrinsic value and why is it calculated? The intrinsic value is what a stock (or any asset, for that matter) is actually worth. The intrinsic value calculated using fundamental analysis is compared with the current market price of the security to know whether the security is undervalued or overvalued. E.g.: - A particular stock has an intrinsic value of Rs.100, but the market price of the stock is Rs.150, then the stock is overvalued, and buying the stock may not be a good decision as all the future growth of the business is already factored into the current price.</p>
+    </div>
+    <div class="card">
+      <h2>Types of Future Contracts</h2>
+      <div class="fakeimg" style="height:200px;">
+        <img src="/images/FutureContracts.jpg">
+      </div>
+      <p><b>1. Commodity Futures:</b><br>
+        A commodity is anything that holds commercial value. In India, the various types of commodities being traded are Bullion, Agri, Energy, Base Metals. Commodity futures are contracts that derive their value from a commodity, bought and sold at a predetermined price in future. These contracts are usually preferred by producers or buyers to hedge against future price volatility. Some commodities like gold act as a hedge against inflation due to their low correlation with the stock market. In India, commodity futures are traded on Multi Commodity Exchange (MCX) and the National Commodity and Derivatives Exchange (NCDEX).<br><b>2. Currency Futures:</b><br>
+        As the name suggests, currency futures derive their value from the spot rate of a currency pair. A currency pair indicates the price of one currency that can be exchanged for another currency. These contracts allow you to buy or sell a currency at a fixed exchange rate at a future date. These futures are usually used to hedge against currency risk. For example, an importer importing raw materials from US may purchase USDINR futures to safeguard against rupee depreciation in future. In India, currency futures can be traded on NSE, BSE and MCX SX.<br><b>3. Interest Rate Futures:</b><br>
+        These are futures contracts based on interest-bearing debt instruments. The underlying debt instruments can be T-bills, Government bonds, etc. Interest rate futures is a contract between a buyer and a seller for the future delivery of a debt instrument at a predetermined price. These futures are usually used to hedge against interest rate risk. Due to the inverse relationship between interest rate and bond prices, the interest rate futures are also inversely related to the interest rates. In India, NSE and BSE offer interest rate futures<br><b>4. Stock Futures:</b><br>This is where the real game starts! Stock future is a contract with an individual stock as an underlying. It is a contract to buy or sell a stock at a predetermined price and quantity at a future date. Usually, stock futures are used for speculation and/or hedging purposes. You may trade in stock futures on BSE and NSE. However, they are available only for a specified list of stocks that fulfil certain criteria as stated by the exchanges.<br>
+        <b>5. Index Futures:</b><br>
+        Now, what if you don’t want to trade in individual stock futures? No worries! We have Index futures as well. These futures will be contracts based on market indices like Nifty, Sensex, Bank Nifty etc. Traders use these contracts to speculate based on their directional views about the market. Many traders prefer index futures over stock futures, as the underlying index is a basket of stocks the risk is spread out amongst them. You may trade in index futures on BSE and NS</p>
+    </div>
+    <div class="card">
+      <h2>Cup and Handle Chart Pattern</h2>
+      <div class="fakeimg" style="height:200px;">
+        <img src="/images/Cup&HandlePattern.jpg">
+      </div>
+      <p>As the name suggests a cup with a handle chart pattern is a pattern of price movement on the trading chart that looks similar to a cup with a handle. A “U” shaped price movement forms the cup section and a short price pullback from the edge of the cup forms the handle. The pattern shows the movement of the stock in the past and helps us predict the stock's movement in the future. However, this pattern takes time to form. The formation may be as short as seven weeks or as long as 65 weeks or more. A cup and handle pattern provides a logical entry point, a stop-loss level, and a profit target.</p>
+    </div>
+  </div>
+  <!--<div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>-->
+</div>
+
+<div class="footer">
+  <p>Copyright © 2021 EasyFinance. All rights reserved.</p>
+</div>
+
+</body>
+</html>
